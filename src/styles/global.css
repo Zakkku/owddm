@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Futurewave";
+  src: local(""), url("/fonts/Futurewave.otf") format("opentype"),
+    url("/fonts/Futurewave.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-weight: 600;
+  @apply tracking-widest;
+}
+
+a,
+.btn {
+  @apply rounded-lg p-3;
+  @apply transition-colors duration-100;
+  @apply hover:text-sky-200;
+}
+
+.btn {
+  @apply rounded-lg mx-4;
+  @apply border-2 border-current px-2 py-1 sm:px-6 sm:py-4;
+}
+
+.text-gradient-brand {
+  @apply transition-colors duration-200;
+  @apply bg-clip-text text-transparent;
+  @apply bg-gradient-to-br from-sky-800 via-stone-600 to-sky-200;
+}
+
+.text-gradient-hero {
+  @apply transition-colors duration-200;
+  @apply bg-clip-text text-transparent;
+  @apply bg-gradient-to-br from-white via-yellow-600/40 to-white/50;
+}
+
+.bg-gradient-hero {
+  @apply bg-gradient-to-br from-red-600/90 via-red-500/70 to-red-900;
+}
+
+.bg-gradient-text {
+  @apply rounded-xl p-12;
+  @apply bg-gradient-to-br from-gray-950/10 via-black/10 to-gray-950/50;
+  @apply backdrop-blur-sm;
+}
+
+.bg-gradient-brand {
+  @apply bg-gradient-to-br from-blue-900 via-gray-300 to-purple-500;
+}
+
+.bg-gradient-nav {
+  @apply bg-gradient-to-br from-gray-100/40 via-sky-200/40 to-white/50;
+  @apply backdrop-blur-md text-black;
+}
